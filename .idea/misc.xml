@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectPlainTextFileTypeManager">
+    <file url="file://$PROJECT_DIR$/jw_testcase/cancelGrpCrmCorpContract__HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/cancelGrpCrmCorpContract_HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/cancelGrpCrmCorpContract浣滃簾鍚堝悓_HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/cancelIdsGrpCrmCorpContract__HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/cancelIdsGrpCrmCorpContract_HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/cancelIdsGrpCrmCorpContract鎵归噺浣滃簾鍚堝悓_HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/delGrpCmmEmployee__HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/delGrpCmmEmployee_HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/delGrpCmmEmployeeGrpCmmEmployee鍒犻櫎鏂规硶_HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/delGrpCmmOption__HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/delGrpCmmOption_HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/delGrpCmmOptionGrpCmmOption鍒犻櫎鏂规硶_HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/delGrpCmmSaler__HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/delGrpCmmSaler_HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/delGrpCmmSalerGrpCmmSaler鍒犻櫎鏂规硶_HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/delGrpCrmCorpBlacklist__HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/delGrpCrmCorpBlacklist_HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/delGrpCrmCorpBlacklist榛戝悕鍗曞垹闄ゆ柟娉昣HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/delGrpCrmCorpManageunit__HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/delGrpCrmCorpManageunit_HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/delGrpCrmCorpManageunit绠＄悊閰掑簵鍒犻櫎鏂规硶_HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/delGrpCrmMember__HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/delGrpCrmMember_HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/delGrpCrmMember绂佺敤浼氬憳_HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/delIdsGrpCmmEmployee__HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/delIdsGrpCmmEmployee_HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/delIdsGrpCmmEmployeeGrpCmmEmployee鎵归噺鍒犻櫎鏂规硶_HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/delIdsGrpCmmOption__HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/delIdsGrpCmmOption_HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/delIdsGrpCmmOptionGrpCmmOption鎵归噺鍒犻櫎鏂规硶_HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/delIdsGrpCmmSaler__HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/delIdsGrpCmmSaler_HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/delIdsGrpCmmSalerGrpCmmSaler鎵归噺鍒犻櫎鏂规硶_HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/delIdsGrpCrmCorpBlacklist__HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/delIdsGrpCrmCorpBlacklist_HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/delIdsGrpCrmCorpBlacklist榛戝悕鍗曟壒閲忓垹闄ゆ柟娉昣HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/delIdsGrpCrmCorpManageunit__HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/delIdsGrpCrmCorpManageunit_HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/delIdsGrpCrmCorpManageunit绠＄悊閰掑簵鎵归噺鍒犻櫎鏂规硶_HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/delIdsGrpCrmMember__HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/delIdsGrpCrmMember_HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/delIdsGrpCrmMember鎵归噺绂佺敤浼氬憳_HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/delIdsPosBill__HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/delIdsPosBill_HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/delIdsPosBillPosBill鎵归噺鍒犻櫎鏂规硶_HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/delIdsPosBlock__HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/delIdsPosBlock_HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/delIdsPosBlockOccupy__HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/delIdsPosBlockOccupy_HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/delIdsPosBlockOccupyPosBlockOccupy鎵归噺鍒犻櫎鏂规硶_HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/delIdsPosBlockPosBlock鎵归噺鍒犻櫎鏂规硶_HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/delIdsPosPeriod__HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/delIdsPosPeriod_HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/delIdsPosPeriodPosPeriod鎵归噺鍒犻櫎鏂规硶_HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/delIdsPosSales__HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/delIdsPosSales_HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/delIdsPosSalesPosSales鎵归噺鍒犻櫎鏂规硶_HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/delPosBill__HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/delPosBill_HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/delPosBillPosBill鍒犻櫎鏂规硶_HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/delPosBlock__HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/delPosBlock_HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/delPosBlockOccupy__HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/delPosBlockOccupy_HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/delPosBlockOccupyPosBlockOccupy鍒犻櫎鏂规硶_HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/delPosBlockPosBlock鍒犻櫎鏂规硶_HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/delPosPeriod__HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/delPosPeriod_HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/delPosPeriodPosPeriod鍒犻櫎鏂规硶_HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/delPosSales__HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/delPosSales_HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/delPosSalesPosSales鍒犻櫎鏂规硶_HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/enableData__HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/enableData_HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/enableData瑙掕壊鍚敤_HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/enableGrpCrmCorpBlacklist__HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/enableGrpCrmCorpBlacklist_HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/enableGrpCrmCorpBlacklist榛戝悕鍗曞惎鐢ㄦ柟娉昣HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/enableGrpCrmCorpContract__HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/enableGrpCrmCorpContract_HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/enableGrpCrmCorpContract鍙栨秷浣滃簾鍚堝悓_HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/enableIdsGrpCrmCorpBlacklist__HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/enableIdsGrpCrmCorpBlacklist_HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/enableIdsGrpCrmCorpBlacklist榛戝悕鍗曟壒閲忓惎鐢ㄦ柟娉昣HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/enableIdsGrpCrmCorpContract__HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/enableIdsGrpCrmCorpContract_HttpPostImpl.py" />
+    <file url="file://$PROJECT_DIR$/jw_testcase/enableIdsGrpCrmCorpContract鎵归噺鍙栨秷浣滃簾鍚堝悓_HttpPostImpl.py" />
+  </component>
+  <component name="ProjectRootManager" version="2" default="true" project-jdk-name="Python 2.7.12 (C:\Python27\python.exe)" project-jdk-type="Python SDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

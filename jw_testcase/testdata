@@ -1,0 +1,13 @@
+                if ${rvflg} == 1:
+                    if responsevalue == ${result_output}:
+                        #${result_assert}();
+                        print " the ${result_assert} ===========>", ${result_assert}
+                        ${result_assert}
+                    else:
+                        raise "The GET Request return value has exception"
+                else:
+                    print "the return rvflg is not 1, so we can't excute this return compare."
+            else:
+                raise "The interface has exception"
+                print response.reason,response.read()
+                #self.assertEqual(statucode, 200,'incorrect default size')

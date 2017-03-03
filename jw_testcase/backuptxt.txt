@@ -1,0 +1,34 @@
+
+    # result=connection_db.selectIFD_INTERFACEDEFOneRecord();
+    # for row in result:
+    #     # fname = row[0]
+    #     # lname = row[5]
+    #     strtestname=''.join(row[2])
+    #
+    #     resultone=connection_db.selectIFD_EXPASSERTOneonly(row[3])
+    #     # strassertname=''.join(resultone[3])
+    #     strassertname=resultone[3]
+    #     strtesttype=row[7]
+    #     strassertname=resultone[3]
+    #     restfulName=row[5]
+    #     print " the resultone[3] is############ ->",strassertname,strtesttype
+    #
+    #     if "get" in strtesttype:
+    #         if strassertname != "e":
+    #             generateutils.httpGetImplement(strtestname,strassertname,restfulName,"open09.edaixi.cn1111111");
+    #         else:
+    #             print "the aassert is none value..."
+    #     else :
+    #         if strassertname != "e":
+    #             #generateutils.httpPostImplement("self.assertEqual(statucode, 200);self.assertNotEqual(statucode, 201)","/client/v1/get_order?user_id=11452&order_id=12173793044055");
+    #             generateutils.httpPostMethod(strtestname,strassertname,restfulName,"open09.edaixi.cn1111111");
+    #         else:
+    #             print "the aassert is none value..."
+
+
+    #suite.addTest(get_order_list('test_get_order_list'))
+    #suite.addTest(testcase_api_account_login('test_testcase_api_account_login'))
+    #outfile=open("c://edaixi_testdata//report.html",'wb')
+    #filename = 'G:\\seleniums\\result.html'
+    # connection_db.select();
+

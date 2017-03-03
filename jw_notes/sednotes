@@ -1,0 +1,194 @@
+下面是我学习sed时参照参考书总结的一些常用sed命令，基本上每条语句都进行了调试
+1.打印文件的第二行
+sed -n '2p' file
+2.打印1到3行
+sed -n '1,3p' file
+3.品配单词用/patten/模式，eg，/Hello/
+sed -n '/Hello/'p file
+4.使用模式和行号进行品配,在第4行查询Hello
+sed -n '4,/Hello/' file
+5.配原字符(显示原字符$之前，必须使用\屏蔽其特殊含义)
+sed -n '/\$/'p file
+上述命令将把file中含有$的行打印出来
+6.显示整个文件(只需将范围设置为1到最后于一行)
+$代表最后一行
+sed -n '1,$p' file
+7.任意字符 ，模式/.*/,如/.*ing/匹配任意以ing结尾的单词
+sed -n '/.*ing/'p file
+8.打印首行
+sed -n '1p' file
+9.打印尾行
+sed -n '$p' file
+10.打印行号
+  sed -e '/beijing/=' file #整个文件都打印出来，并且匹配行打印了行号。
+如果只关心实际行号，使用-n选项。
+sed -n '/beijing/=' file
+如果只打印行号及匹配行，必须使用两个sed命令，并使用e选项。第一个命令打印模式匹配行，第二个使用=选项打印行号，
+格式为sed -n -e '/pattern/p' -e '/pattern/=' file。
+sed -n -e '/beijing/p' -e '/beijing/=' file
+11.创建sed脚本文件
+(1)
+#!/bin/sed -f
+#filename:append.sed
+ /beijing/ a\ ＃插入beijing之后
+"Then suddenly it happend!"
+
+chmod u+x append.sed
+./append.sed file将把“Then suddenly it happend!”添加到file中beijing后面的下一行
+
+(2)
+#!/bin/sed -f
+#filename:append.sed
+ /beijing/ i\ ＃插入beijing之前
+"Then suddenly it happend!"
+
+chmod u+x append.sed
+./append.sed file将把“Then suddenly it happend!”添加到file中beijing前面一行
+12.修改文本
+(1)
+#!/bin/sed -f
+#filename:changed
+/beijing/ c\
+xi'an
+上述脚本将beijing替换为xi'an
+(2)
+像插入动作一样，可以使用行号代替模式，两种方式完成相同的功能
+#!/bin/sed -f
+#filename:changed
+4 c\
+xi'an
+将第四行的内容替换为xi'an
+$代表最后一行
+
+13.删除文本
+删除第一行；1d意为删除第一行。
+sed '1d' file
+删除1到3行
+sed '1,3d' file
+删除最后一行
+sed '$d' file
+删除包含beijing的行
+sed '/beijing/d' file
+
+14.替换
+替换命令用替换模式替换指定模式，格式为：
+[ address [，address]] s/ pattern-to-find /replacement-pattern/[g p w n]
+
+sed 's/cao/HU/' file #将file中的cao替换为HU,实际上是将所有的cao替换为HU(我实验的时候是这样的)
+sed 's/\$//' file #将file中的$用空替换(删除)
+
+要进行全局替换，即替换所有出现模式，只需在命令后加g选项。下面的例子将所有cao替换成hu！。
+sed 's/cao/hu/g' file
+
+将替换结果写入一个文件用w选项，下面的例子将cao替换为CAO的替换结果写入文件sed.out：
+sed 's/cao/CAO/w sed.out' file
+
+15.使用替换修改字符串
+果要附加或修改一个字符串，可以使用（ &）命令，&命令保存发现模式以便重新调用
+它，然后把它放在替换字符串里面。这里给出一个修改的设计思路。先给出一个被替换模式，
+然后是一个准备附加在第一个模式后的另一个模式，并且后面带有&，这样修改模式将放在
+匹配模式之前。例如， sed语句s/wrong/"badly"&/p 的结果如下
+sed -n 's/wrong/badly &/p' file
+There is something badly wrong with the car!
+
+原句是：There is something wrong with the car!
+16.将sed结果写入文件命令
+格式为：[ address [，address]]w filename
+eg:sed '1,2 w fileout' file
+文件file输出到屏幕。模式范围即1，2行输出到文件fileout
+
+下面例子中查询模式There，匹配结果行写入文件fileout1。
+sed '/There/ w fileout1' file
+
+17.从文件中读取数据
+address r filename
+创建文件newfile，内容为：
+Hello nihao!
+Welcome Beijing!
+将newfle中的内容加到file中
+sed '/car!/ r newfile' file#将newfile中的内容添加显示到file中car!后面
+sed -i '/car!/ r newfile' file#将newfile中的内容添加到filefile中的car!后面
+
+18.匹配后退出
+-q
+
+sed '/cao.*/q' file#实现匹配后退出
+
+19.处理控制字符
+用一个空格替换两个或更多的#符号。
+sed 's/##*//g' file
+删除所有行首的0
+sed 's/^0//g' file
+
+要产生控制字符（ ^ M），步骤如下；键入sed s/,然后按住< Ctrl>键和v键，释放v键，再按住^键，并保持< Ctrl>键不动，再释放两个键，最后
+按< return>键。下面命令去除行尾^ M字符。
+sed -i 's/^^M//g' file
+
+
+20.处理报文输出
+Database    Size(MB)   Data Created
+-----------------------------------
+GOSOUTH      2048      12/11/08
+TRISUD       5643      12/05/09
+(2 rows affected)
+为了使用上述输出信息(文件名是data.txt)做进一步自动处理，需要知道所存数据库名称，为此需执行以下
+操作：
+1) 使用s /-*// g删除横线- - - - - -。
+2) 使用/^$/ d删除空行。
+3) 使用$d删除最后一行
+4) 使用1d删除第一行。
+5) 使用awk {print $1}打印第一列。
+命令如下，这里使用了cat，并管道传送结果到sed命令。
+cat data.txt | sed 's/--*//g' | sed '/^$/d' | sed '$d' |sed '1d' |awk '{print $1}'
+
+21.去除行首数字
+sed 's/[0-9]//g' data.txt
+
+22附加文本
+sed 's/[0-9][0-9]*/& OK/g' data.txt #实现向data.txt中的每行中数字后面加上OK
+如：原文是
+Database    Size(MB)   Data Created
+-----------------------------------
+GOSOUTH      2048      12/11/08
+TRISUD       5643      12/05/09
+(2 rows affected)
+125178 before
+caojian 23
+234 shanghai
+执行命令后
+Database    Size(MB)   Data Created
+-----------------------------------
+GOSOUTH      2048 OK      12 OK/11 OK/08 OK
+TRISUD       5643 OK      12 OK/05 OK/09 OK
+(2 OK rows affected)
+125178 OK before
+caojian 23 OK
+234 OK shanghai
+
+23.从shell中向sed传值
+$NAME="It's a good idea"
+$REPLACE="excelent"
+$NEW=`echo $NAME | sed s/good/$NEW/g" `
+$echo $NEW
+It's a excelent idea!
+
+
+##############################################################################################################
+
+sed /^$/d        filename        删除空行，实际应用中可以把－e参数换成－i，这样就可以直接对源文件进行操作和修改了；
+
+以下是删除各种标c和c++，还有shell脚本本身的注释#的脚本
+#delete the comment line begin with '//comment'
+sed -i "/^[ \t]*\/\//d" $filename
+#delete the commnet line end with '//comment'
+sed -i "s/\/\/[^\"]*//" $filename
+#delete the comment only occupied one line '/* commnet */'
+sed -i "s/\/\*.*\*\///" $filename
+#delete the comment that occupied many lines '/*comment
+#                                              *comment
+#                                              */
+sed -i "/^[ \t]*\/\*/,/.*\*\//d" test.conf
+sed -i 's#\#.*# #' $filename
+sed -i ":begin; { /\*\//! { $! { N; b begin }; }; s/\/\*.*\*\// /; };"  $filename
+sed -i '/^$/d' $filename
+
